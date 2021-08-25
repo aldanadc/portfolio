@@ -1,0 +1,492 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.raleway {
+  font-family: "Railway", sans-serif;
+}
+
+.tomorrow {
+  font-family: "Tomorrow", sans-serif;
+}
+
+.train {
+  font-family: "Train One", cursive;
+}
+
+.mono {
+  font-family: "Major Mono Display", monospace;
+}
+
+.indie {
+  font-family: "Indie Flower", cursive;
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+.line-break {
+  display: block;
+}
+
+body {
+  background-color: #fff;
+  width: 100%;
+}
+body header {
+  width: 100%;
+}
+body header .navbar {
+  background-image: linear-gradient(to right, #212f45, #272640, #312244, #3e1f47, #4d194d);
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body header .navbar .menu {
+  padding: 0;
+  position: absolute;
+  top: 55px;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to right, #212f45, #272640, #312244, #3e1f47, #4d194d);
+}
+body header .navbar .menu .links-container {
+  display: flex;
+  height: 20vh;
+  margin-top: 2em;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+body header .navbar .menu .links-container li {
+  list-style: none;
+  display: inline;
+}
+body header .navbar .menu .links-container li a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.6);
+  padding-bottom: 0.2em;
+}
+body header .navbar .menu.show-menu {
+  display: flex;
+}
+body header .navbar .burger {
+  color: #fff;
+  font-size: 1.5em;
+  margin-right: 2em;
+}
+body main {
+  width: 100%;
+  position: relative;
+}
+body main .hero {
+  height: 30vh;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1605217074754-7163c10f5804?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  height: 600px;
+}
+body main .hero .title {
+  padding: 2em 1em 1em 10%;
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 3px;
+  height: 250px;
+}
+body main .hero .intro {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 2rem;
+  width: 60%;
+  margin-left: 35%;
+  letter-spacing: 2px;
+}
+body main .hero .ml6 {
+  position: relative;
+}
+body main .hero .ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0;
+  overflow: hidden;
+  max-width: 450px;
+}
+body main .hero .ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+body main .hero .ml6 .letter:first-of-type::first-letter {
+  font-size: 3rem;
+}
+body main .hero .dev-container .dev {
+  display: none;
+}
+body main .about {
+  padding: 1em 0 4em 0;
+  background-image: linear-gradient(to left, #212f45, #272640, #312244, #3e1f47, #4d194d);
+}
+body main .about .title {
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+body main .about .title,
+body main .about .description {
+  margin: 1em 0 0.5em 5%;
+  color: #fff;
+}
+body main .about .description {
+  margin-bottom: 2em;
+}
+body main .about .facts-container {
+  margin: auto;
+  color: black;
+  width: 80%;
+  max-width: 1000px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 7px 5px 5px 5px rgba(77, 25, 77, 0.9);
+  padding-bottom: 0.5em;
+}
+body main .about .facts-container h2 {
+  line-height: 2rem;
+  padding: 1rem 1rem 1rem 2.5rem;
+  font-size: 1.5rem;
+}
+body main .about .facts-container .facts {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+body main .about .facts-container .facts .fact {
+  list-style: none;
+  font-size: 1rem;
+  line-height: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+body main .about .facts-container .facts .fact p {
+  display: inline;
+  margin-left: 1em;
+}
+body main .about .facts-container .facts .fact .icon {
+  width: 50px;
+  height: 50px;
+}
+body main .work .title {
+  font-size: 2rem;
+  margin: 1em 0 2em 5%;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+body main .work .work-container {
+  width: 100%;
+}
+body main .work .work-container .work-section {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body main .work .work-container .work-section .work-pic {
+  display: block;
+  margin: 0 auto 0.3em auto;
+  width: 55%;
+  max-width: 450px;
+  height: 40vh;
+  border: 1px solid rgba(77, 25, 77, 0.7);
+}
+body main .work .work-container .work-section .overlay {
+  display: none;
+}
+body main .work .work-container .work-section .overlay .show-me {
+  display: none;
+}
+body main .work .work-container .work-section .show-me-mobile {
+  display: block;
+  margin: 0 auto 2em auto;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #212f45, #272640, #312244, #3e1f47, #4d194d);
+  color: white;
+  padding: 0.7em 1.3em;
+  border-radius: 15px;
+  border: 1px solid #fff;
+}
+body main .contact {
+  padding-top: 1em;
+  width: 100%;
+  background-image: linear-gradient(to right, #212f45, #272640, #312244, #3e1f47, #4d194d);
+  height: 200px;
+  text-align: center;
+}
+body main .contact .contact-p {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 200;
+  width: 80%;
+  margin: auto;
+}
+body main .contact .links-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 1.3em auto 0 auto;
+}
+body main .contact .links-container a {
+  text-decoration: none;
+  background: none;
+  border: 2px solid;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  margin-bottom: 2em;
+  width: 30%;
+}
+body main .contact .links-container .linkedin {
+  color: #ce6edc;
+}
+body main .contact .links-container .email {
+  color: #cea7ec;
+}
+body main .contact .links-container .github {
+  color: #ffa260;
+}
+body .footer {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+}
+body .footer .icons8 {
+  font-size: 0.9rem;
+  color: #fff;
+  background-image: linear-gradient(to right, #212f45, #272640, #312244, #3e1f47, #4d194d);
+}
+body .footer .icons8 a {
+  color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  body header .navbar {
+    height: 8vh;
+  }
+  body header .navbar .menu {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    background-image: none;
+    position: relative;
+    flex-direction: row;
+    height: 8vh;
+    top: 0;
+  }
+  body header .navbar .menu .links-container {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    height: auto;
+    margin: 0;
+  }
+  body header .navbar .menu .links-container li {
+    list-style: none;
+  }
+  body header .navbar .menu .links-container li a {
+    font-size: 2em;
+    text-decoration: none;
+    color: #f0efeb;
+    border-bottom: 0.1rem solid transparent;
+  }
+  body header .navbar .menu .links-container li a:hover {
+    text-shadow: 1px 1px 2px #4d194d, 0 0 1em #4d194d, 0 0 0.2em #fff;
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+  body header .navbar .burger {
+    display: none;
+  }
+  body main .hero {
+    height: 30vh;
+    height: 1000px;
+  }
+  body main .hero .title {
+    padding: 2em 1em 1em 10%;
+    font-size: 4rem;
+    margin-bottom: 140px;
+    height: 250px;
+  }
+  body main .hero .ml6 .text-wrapper {
+    max-width: 850px;
+  }
+  body main .hero .ml6 .letter:first-of-type::first-letter {
+    font-size: 4.5rem;
+  }
+  body main .hero .intro {
+    font-size: 2.3rem;
+    line-height: 5rem;
+    width: 30%;
+    margin-left: 10%;
+    letter-spacing: 2px;
+  }
+  body main .hero .dev-container .dev {
+    display: block;
+    width: 45%;
+    position: relative;
+    left: 52%;
+    top: -470px;
+    box-shadow: rgba(77, 25, 77, 0.3) 0px 60px 40px -7px;
+  }
+  body main .about .title {
+    font-size: 3.5rem;
+    font-weight: 200;
+  }
+  body main .about .title,
+body main .about .description {
+    margin: 1em 0 0.5em 5%;
+    color: #fff;
+  }
+  body main .about .description {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  body main .about .facts-container h2 {
+    font-size: 2rem;
+  }
+  body main .about .facts-container .facts .fact {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  body main .about .facts-container .facts .fact p {
+    display: inline;
+    margin-left: 1em;
+  }
+  body main .about .facts-container .facts .fact .icon {
+    width: 50px;
+    height: 50px;
+  }
+  body main .work .title {
+    font-size: 3.5rem;
+    font-weight: 200;
+  }
+  body main .work .work-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 5em;
+  }
+  body main .work .work-container .work-section {
+    width: 18%;
+    position: relative;
+  }
+  body main .work .work-container .work-section .show-me-mobile {
+    display: none;
+  }
+  body main .work .work-container .work-section .work-pic {
+    width: 100%;
+    height: 50vh;
+    border-right: 1px solid #4d194d;
+  }
+  body main .work .work-container .work-section .work-pic.hover {
+    transform: scale(1.1);
+    transition-duration: 0.8s;
+  }
+  body main .work .work-container .work-section .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body main .work .work-container .work-section .overlay .show-me {
+    display: block;
+    opacity: 0;
+    margin: auto;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition-duration: 0.8s;
+    background-image: linear-gradient(to right, #212f45, #272640, #312244, #3e1f47, #4d194d);
+    padding: 0.6em 0.9em;
+    border-radius: 15px;
+    border: 1px solid #fff;
+  }
+  body main .work .work-container .work-section .overlay .show-me:hover {
+    text-shadow: 1px 1px 2px #4d194d, 0 0 1em #4d194d, 0 0 0.2em #fff;
+  }
+  body main .work .work-container .work-section .overlay.hover {
+    transform: scale(1.1);
+    transition-duration: 0.8s;
+    background-color: rgba(77, 25, 77, 0.5);
+    box-shadow: 4px 3px 3px 3px rgba(77, 25, 77, 0.8);
+  }
+  body main .contact {
+    height: 250px;
+  }
+  body main .contact .contact-p {
+    font-size: 3rem;
+    padding-bottom: 1vh;
+  }
+  body main .contact .links-container {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 1em auto;
+  }
+  body main .contact .links-container a {
+    text-decoration: none;
+    background: none;
+    border: 2px solid;
+    padding: 0.5em 1em;
+    font-size: 2.2rem;
+    transition: all 0.25s;
+    margin-bottom: 2em;
+    width: 220px;
+  }
+  body main .contact .links-container a:hover {
+    cursor: pointer;
+    color: white;
+    transform: translateY(-0.25em);
+  }
+  body main .contact .links-container .email:hover {
+    border-color: #7e40cc;
+    box-shadow: 0 0.5em 0.5em -0.4em #7e40cc;
+  }
+  body main .contact .links-container .linkedin:hover {
+    border-color: #8f2695;
+    box-shadow: 0 0.5em 0.5em -0.4em #8f2695;
+  }
+  body main .contact .links-container .github:hover {
+    border-color: #f1ff5c;
+    box-shadow: 0 0.5em 0.5em -0.4em #dc9f63;
+  }
+  body .footer {
+    font-size: 1.6rem;
+  }
+  body .footer p:first-of-type {
+    height: 40px;
+  }
+  body .footer .icons8 {
+    font-size: 1.1rem;
+  }
+}/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,111 @@
+async function findDev() {
+  const dev =  await Dev.findOne({
+    where: {
+      basedIn: "Buenos Aires, Argentina",
+      stack: "JavaScript - Node.js - MongoDB - MySQL - Semantic HTML - Responsive CSS",
+      tools: ["Sass", "Bootstrap", "Bulma", "GitHub", "NPM", "VS Code", "Postman"],
+      languages: "Spanish - English - Portuguese",
+      englishLevel: "Proficient - C2",
+      seniority: "Trainee. Eager to learn and grow",
+      softSkills: "Adaptability, fast-learner, easy-going, team-player",
+      randomFact: "Has a cat with an Irish name"
+    }
+  });
+
+  return dev
+}
+
+
+const burger = document.querySelector(".burger");
+const menu = document.querySelector(".menu");
+
+// burger.addEventListener("click", () => {
+//   menu.style.display = "flex";
+// })
+
+const showMenu = () => {
+  if (menu.classList.contains("show-menu")) {
+    menu.classList.remove("show-menu");
+    burger.innerHTML = "&#9776;"
+    //burger.style.fontSize = "1.5em";
+    //burger.style.marginRight = "48px";
+    
+  }else {
+    menu.classList.add("show-menu");
+    menu.style.zIndex = "2";
+    burger.innerHTML = "&#215;";
+    //burger.style.fontSize = "3em"
+  }
+}
+
+burger.addEventListener("click", () => {
+
+  showMenu();
+
+})
+
+
+let workOverlay = document.getElementsByClassName("overlay");
+workOverlay = Array.from(workOverlay);
+
+workOverlay.forEach(element => {
+  element.addEventListener("mouseenter", () => {
+    element.previousElementSibling.classList.add("hover");
+    element.classList.add("hover");
+    //element.firstElementChild.style.visibility = "visible";
+    element.firstElementChild.style.opacity = "1";
+    
+  })
+})
+
+workOverlay.forEach(element => {
+  element.addEventListener("mouseleave", () => {
+    element.previousElementSibling.classList.remove("hover");
+    element.classList.remove("hover");
+    //element.firstElementChild.style.visibility = "hidden";
+    element.firstElementChild.style.opacity = "0";
+  })
+})
+
+// workOverlay.forEach(element => {
+//   element.addEventListener("mouseout", () => {
+//     element.style.visibility = "hidden";
+//   })
+// })
+
+
+// Wrap every letter in a span
+const textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: 1})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 1,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+
+const dev = document.getElementsByClassName("dev");
+
+// setTimeout(function showDev() {
+//   dev[0].style.opacity = "1";
+// }, 2000)
+
+
+// const intro = document.getElementsByClassName("intro");
+
+// setTimeout(function showIntro() {
+//   intro[0].style.opacity = "1";
+// }, 3000)
+
+
+
