@@ -87,7 +87,7 @@ body {
       .burger {
         color: #fff;
         font-size: 1.5em;
-        margin-right: 2em;
+        margin-right: 1.5em;
       }
     }
   }
@@ -97,18 +97,18 @@ body {
     position: relative;
 
     .hero {
-      height: 30vh;
+      //height: 40vh;
       width: 100%;
       background-image: url("https://images.unsplash.com/photo-1605217074754-7163c10f5804?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
       background-size: cover;
-      height: 600px;
+      //height: 700px;
 
       .title {
         padding: 2em 1em 1em 10%;
         font-size: 2rem;
         font-weight: 200;
         letter-spacing: 3px;
-        height: 250px;
+        height: 300px;
       }
 
       .intro {
@@ -116,9 +116,10 @@ body {
         font-size: 1.5rem;
         font-weight: 900;
         line-height: 2rem;
-        width: 60%;
-        margin-left: 35%;
+        width: 70%;
+        margin-left: 30%;
         letter-spacing: 2px;
+        padding-bottom: 2em;
       }
 
       .ml6 {
@@ -174,7 +175,7 @@ body {
       .facts-container {
         margin: auto;
         color: black;
-        width: 80%;
+        width: 90%;
         max-width: 1000px;
         border-radius: 10px;
         background-color: #fff;
@@ -266,7 +267,7 @@ body {
       padding-top: 1em;
       width: 100%;
       background-image: linear-gradient(to right, #212f45, #272640, #312244, #3e1f47, #4d194d);
-      height: 200px;
+      height: 250px;
       text-align: center;
 
       .contact-p {
@@ -410,7 +411,7 @@ body {
             width: 45%;
             position: relative;
             left: 52%;
-            top: -470px;
+            top: -550px;
             box-shadow: rgba(77, 25, 77, 0.3) 0px 60px 40px -7px;
           }
         }

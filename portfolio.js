@@ -19,22 +19,16 @@ async function findDev() {
 const burger = document.querySelector(".burger");
 const menu = document.querySelector(".menu");
 
-// burger.addEventListener("click", () => {
-//   menu.style.display = "flex";
-// })
 
 const showMenu = () => {
   if (menu.classList.contains("show-menu")) {
     menu.classList.remove("show-menu");
     burger.innerHTML = "&#9776;"
-    //burger.style.fontSize = "1.5em";
-    //burger.style.marginRight = "48px";
     
   }else {
     menu.classList.add("show-menu");
     menu.style.zIndex = "2";
-    burger.innerHTML = "&#215;";
-    //burger.style.fontSize = "3em"
+    burger.innerHTML = "&#10006;";
   }
 }
 
@@ -52,7 +46,6 @@ workOverlay.forEach(element => {
   element.addEventListener("mouseenter", () => {
     element.previousElementSibling.classList.add("hover");
     element.classList.add("hover");
-    //element.firstElementChild.style.visibility = "visible";
     element.firstElementChild.style.opacity = "1";
     
   })
@@ -62,16 +55,9 @@ workOverlay.forEach(element => {
   element.addEventListener("mouseleave", () => {
     element.previousElementSibling.classList.remove("hover");
     element.classList.remove("hover");
-    //element.firstElementChild.style.visibility = "hidden";
     element.firstElementChild.style.opacity = "0";
   })
 })
-
-// workOverlay.forEach(element => {
-//   element.addEventListener("mouseout", () => {
-//     element.style.visibility = "hidden";
-//   })
-// })
 
 
 // Wrap every letter in a span
