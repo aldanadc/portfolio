@@ -241,7 +241,7 @@ body main .contact .contact-p {
 body main .contact .links-container {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   margin: 1.3em auto 0 auto;
 }
 body main .contact .links-container a {
@@ -251,7 +251,7 @@ body main .contact .links-container a {
   padding: 0.5em 1em;
   font-size: 1rem;
   margin-bottom: 2em;
-  width: 30%;
+  width: 32%;
 }
 body main .contact .links-container .linkedin {
   color: #ce6edc;
