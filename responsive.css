@@ -361,7 +361,7 @@ body .footer .icons8 a {
     width: 45%;
     position: relative;
     left: 52%;
-    top: -50vh;
+    top: -580px;
     box-shadow: rgba(77, 25, 77, 0.4) 30px 40px 20px;
     transition-duration: 1s;
   }
