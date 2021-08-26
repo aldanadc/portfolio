@@ -346,7 +346,7 @@ body .footer .icons8 a {
   }
   body main .hero .intro {
     font-size: 2.3rem;
-    line-height: 5rem;
+    line-height: 4rem;
     width: 30%;
     margin-left: 10%;
     letter-spacing: 2px;
@@ -357,7 +357,7 @@ body .footer .icons8 a {
     width: 45%;
     position: relative;
     left: 52%;
-    top: -580px;
+    top: -55vh;
     box-shadow: rgba(77, 25, 77, 0.4) 30px 40px 20px;
     transition-duration: 1s;
   }
