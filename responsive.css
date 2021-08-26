@@ -519,7 +519,8 @@ body main .about .description {
 }
 @media screen and (min-width: 1430px) {
   body main .hero .intro {
-    line-height: 2.5rem;
+    padding-top: 1.5em;
+    line-height: 3rem;
     width: 25%;
   }
   body main .hero .dev-container .dev {
