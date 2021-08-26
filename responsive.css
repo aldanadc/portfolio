@@ -354,6 +354,7 @@ body .footer .icons8 a {
     width: 30%;
     margin-left: 10%;
     letter-spacing: 2px;
+    padding: 0;
   }
   body main .hero .dev-container .dev {
     opacity: 0;
@@ -361,7 +362,7 @@ body .footer .icons8 a {
     width: 45%;
     position: relative;
     left: 52%;
-    top: -580px;
+    top: -40vh;
     box-shadow: rgba(77, 25, 77, 0.4) 30px 40px 20px;
     transition-duration: 1s;
   }
