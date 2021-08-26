@@ -352,7 +352,8 @@ body {
         .menu {
           display: flex;
           justify-content: space-around;
-          width: 30%;
+          width: 50%;
+          max-width: 400px;
           background-image: none;
           position: relative;
           flex-direction: row;
@@ -415,7 +416,7 @@ body {
 
         .intro {
           font-size: 2rem;
-          line-height: 3rem;
+          line-height: 2.5rem;
           width: 30%;
           margin-left: 10%;
           letter-spacing: 2px;
@@ -429,7 +430,7 @@ body {
             width: 45%;
             position: relative;
             left: 52%;
-            top: -55vh;
+            top: -50vh;
             box-shadow: rgba(77, 25, 77, 0.4) 30px 40px 20px;
             transition-duration: 1s;
           }
@@ -614,18 +615,37 @@ body {
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1200px) {
   body {
     main {
       .hero {
         .intro {
-          line-height: 4.5rem;
+          line-height: 2.5rem;
           width: 25%;
         }
 
         .dev-container {
           .dev {
             top: -50vh;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1430px) {
+  body {
+    main {
+      .hero {
+        .intro {
+          line-height: 2.5rem;
+          width: 25%;
+        }
+
+        .dev-container {
+          .dev {
+            top: -40vh;
           }
         }
       }
