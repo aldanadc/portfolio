@@ -94,11 +94,10 @@ body main .hero {
   background-size: cover;
 }
 body main .hero .title {
-  padding: 2em 1em 1em 10%;
+  padding: 2em 1em 0 10%;
   font-size: 2rem;
   font-weight: 200;
   letter-spacing: 3px;
-  height: 300px;
 }
 body main .hero .intro {
   text-align: center;
@@ -106,7 +105,7 @@ body main .hero .intro {
   font-weight: 900;
   line-height: 2rem;
   width: 70%;
-  margin-left: 30%;
+  margin-left: 28%;
   letter-spacing: 2px;
   padding-bottom: 2em;
 }
@@ -128,6 +127,12 @@ body main .hero .ml6 .letter {
 }
 body main .hero .ml6 .letter:first-of-type::first-letter {
   font-size: 3rem;
+}
+body main .hero .subtitle {
+  padding: 0 0 1em 10%;
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 3px;
 }
 body main .hero .dev-container .dev {
   display: none;
@@ -167,6 +172,9 @@ body main .about .facts-container h2 {
 body main .about .facts-container .facts {
   margin-left: 0.2rem;
   margin-right: 0.2rem;
+  padding: 0 1.5em;
+  display: flex;
+  flex-direction: column;
 }
 body main .about .facts-container .facts .fact {
   list-style: none;
@@ -204,7 +212,7 @@ body main .work .work-container .work-section .work-pic {
   display: block;
   margin: 0 auto 0.3em auto;
   width: 55%;
-  max-width: 450px;
+  max-width: 260px;
   height: 40vh;
   border: 1px solid rgba(77, 25, 77, 0.7);
 }
@@ -323,10 +331,11 @@ body .footer .icons8 a {
     height: 1000px;
   }
   body main .hero .title {
-    padding: 2em 1em 1em 10%;
+    padding: 1em 1em 0 10%;
     font-size: 4rem;
-    margin-bottom: 140px;
-    height: 250px;
+  }
+  body main .hero .subtitle {
+    font-size: 4rem;
   }
   body main .hero .ml6 .text-wrapper {
     max-width: 850px;
@@ -346,7 +355,7 @@ body .footer .icons8 a {
     width: 45%;
     position: relative;
     left: 52%;
-    top: -550px;
+    top: -700px;
     box-shadow: rgba(77, 25, 77, 0.3) 0px 60px 40px -7px;
   }
   body main .about .title {
@@ -401,6 +410,7 @@ body main .about .description {
     width: 100%;
     height: 50vh;
     border-right: 1px solid #4d194d;
+    max-width: 450px;
   }
   body main .work .work-container .work-section .work-pic.hover {
     transform: scale(1.1);
