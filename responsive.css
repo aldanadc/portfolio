@@ -289,7 +289,7 @@ body .footer .icons8 a {
   color: #fff;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   body header .navbar {
     height: 8vh;
   }
@@ -328,7 +328,6 @@ body .footer .icons8 a {
     display: none;
   }
   body main .hero {
-    height: 30vh;
     height: 1000px;
   }
   body main .hero .title {
@@ -358,7 +357,7 @@ body .footer .icons8 a {
     width: 45%;
     position: relative;
     left: 52%;
-    top: -700px;
+    top: -580px;
     box-shadow: rgba(77, 25, 77, 0.4) 30px 40px 20px;
     transition-duration: 1s;
   }

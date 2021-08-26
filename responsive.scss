@@ -339,7 +339,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   body {
     header {
       .navbar {
@@ -389,13 +389,11 @@ body {
 
     main {
       .hero {
-        height: 30vh;
         height: 1000px;
 
         .title {
           padding: 1em 1em 0 10%;
           font-size: 4rem;
-          //height: 250px;
         }
 
         .subtitle {
@@ -426,7 +424,7 @@ body {
             width: 45%;
             position: relative;
             left: 52%;
-            top: -700px;
+            top: -580px;
             box-shadow: rgba(77, 25, 77, 0.4) 30px 40px 20px;
             transition-duration: 1s;
           }
