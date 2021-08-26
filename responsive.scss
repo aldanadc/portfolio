@@ -420,12 +420,14 @@ body {
 
         .dev-container {
           .dev {
+            opacity: 0;
             display: block;
             width: 45%;
             position: relative;
             left: 52%;
             top: -700px;
-            box-shadow: rgba(77, 25, 77, 0.3) 0px 60px 40px -7px;
+            box-shadow: rgba(77, 25, 77, 0.4) 30px 40px 20px;
+            transition-duration: 1s;
           }
         }
       }

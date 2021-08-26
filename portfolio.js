@@ -82,16 +82,10 @@ anime.timeline({loop: 1})
 
 const dev = document.getElementsByClassName("dev");
 
-// setTimeout(function showDev() {
-//   dev[0].style.opacity = "1";
-// }, 2000)
+setTimeout(function showDev() {
+  dev[0].style.opacity = "1";
+}, 500)
 
-
-// const intro = document.getElementsByClassName("intro");
-
-// setTimeout(function showIntro() {
-//   intro[0].style.opacity = "1";
-// }, 3000)
 
 
 
