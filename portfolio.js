@@ -38,6 +38,14 @@ burger.addEventListener("click", () => {
 
 })
 
+const links = document.querySelectorAll(".menu-item a");
+
+if (window.matchMedia("(max-width: 1024px)").matches) {
+  links.forEach(link => {
+    link.addEventListener("click", showMenu)
+  })
+}
+
 
 let workOverlay = document.getElementsByClassName("overlay");
 workOverlay = Array.from(workOverlay);

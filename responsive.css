@@ -127,6 +127,7 @@ body main .hero .ml6 .letter {
 }
 body main .hero .ml6 .letter:first-of-type::first-letter {
   font-size: 3rem;
+  font-weight: 400;
 }
 body main .hero .subtitle {
   padding: 0 0 1em 10%;
@@ -342,6 +343,7 @@ body .footer .icons8 a {
   }
   body main .hero .ml6 .letter:first-of-type::first-letter {
     font-size: 4.5rem;
+    font-weight: 400;
   }
   body main .hero .intro {
     font-size: 2.3rem;
