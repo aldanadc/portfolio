@@ -54,7 +54,7 @@ workOverlay.forEach(element => {
   element.addEventListener("mouseenter", () => {
     element.previousElementSibling.classList.add("hover");
     element.classList.add("hover");
-    element.firstElementChild.style.opacity = "1";
+    element.style.opacity = "1";
     
   })
 })
@@ -63,7 +63,7 @@ workOverlay.forEach(element => {
   element.addEventListener("mouseleave", () => {
     element.previousElementSibling.classList.remove("hover");
     element.classList.remove("hover");
-    element.firstElementChild.style.opacity = "0";
+    element.style.opacity = "0";
   })
 })
 
