@@ -404,12 +404,15 @@ body main .about .description {
   }
   body main .work .work-container {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+    flex-flow: row wrap;
+    width: 80%;
     padding-bottom: 5em;
   }
   body main .work .work-container .work-section {
-    width: 18%;
+    width: 250px;
+    margin: 2em 2em;
     position: relative;
   }
   body main .work .work-container .work-section .show-me-mobile {
@@ -433,7 +436,16 @@ body main .about .description {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    justify-content: center;
     opacity: 0;
+  }
+  body main .work .work-container .work-section .overlay .project-name {
+    position: absolute;
+    display: block;
+    top: 15px;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 1.2rem;
   }
   body main .work .work-container .work-section .overlay .show-me {
     display: block;

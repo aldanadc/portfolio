@@ -488,12 +488,16 @@ body {
 
         .work-container {
           display: flex;
-          justify-content: space-around;
-          width: 100%;
+          justify-content: space-evenly;
+          margin: auto;
+          flex-flow: row wrap;
+          width: 80%;
           padding-bottom: 5em;
 
           .work-section {
-            width: 18%;
+            //width: 18%;
+            width: 250px;
+            margin: 2em 2em;
             position: relative;
 
             .show-me-mobile {
@@ -520,8 +524,17 @@ body {
               display: flex;
               flex-direction: row;
               align-items: flex-end;
-              //justify-content: flex-end;
+              justify-content: center;
               opacity: 0;
+
+              .project-name {
+                position: absolute;
+                display: block;
+                top: 15px;
+                color: #FFF;
+                font-weight: 500;
+                font-size: 1.2rem;
+              }
 
               .show-me {
                 display: block;
